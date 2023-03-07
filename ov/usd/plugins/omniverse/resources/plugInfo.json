@@ -1,0 +1,34 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "OmniUsdResolver" : {
+                        "bases": [ "ArResolver" ]
+                    },
+                    "OmniUsdWrapperFileFormat": {
+                        "bases": [ "SdfFileFormat" ],
+                        "displayName": "Omniverse file format that wraps usda/usdc files",
+                        "extensions": [ "usd_omni_wrapper" ],
+                        "formatId": "usd_omni_wrapper",
+                        "primary": true,
+                        "target": "usd"
+                    },
+                    "OmniUsdObjectFileFormat": {
+                        "bases": [ "SdfFileFormat" ],
+                        "displayName": "Omniverse Object file format",
+                        "extensions": [ "usd_omni_object" ],
+                        "formatId": "usd_omni_object",
+                        "primary": true,
+                        "target": "usd"
+                    }
+                }
+            },
+            "LibraryPath": "../../../omniclient.dll",
+            "Name": "Omniverse USD Plugin",
+            "ResourcePath": "resources",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}

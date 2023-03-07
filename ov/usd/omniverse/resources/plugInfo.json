@@ -1,0 +1,36 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "OmniUsdResolver" : {
+                        "bases": [ "ArResolver" ],
+                        "implementsContexts": true,
+                        "implementsScopedCaches" : true
+                    },
+                    "OmniUsdWrapperFileFormat": {
+                        "bases": [ "SdfFileFormat" ],
+                        "displayName": "Omniverse Wrapper File Format",
+                        "extensions": [ "omni" ],
+                        "formatId": "omni",
+                        "primary": true,
+                        "target": "usd"
+                    },
+                    "OmniUsdObjectFileFormat": {
+                        "bases": [ "SdfFileFormat" ],
+                        "displayName": "Omniverse Object file format",
+                        "extensions": [ "live" ],
+                        "formatId": "live",
+                        "primary": true,
+                        "target": "usd"
+                    }
+                }
+            },
+            "LibraryPath": "../../omni_usd_resolver.dll",
+            "Name": "Omniverse USD Plugin",
+            "ResourcePath": "resources",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}

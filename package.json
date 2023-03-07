@@ -1,0 +1,30 @@
+{
+  "name": "omniversejs",
+  "version": "1.0.0",
+  "description": "A javascript wrapper for Omniverse platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USwampertor/OmniverseJS.git"
+  },
+  "keywords": [
+    "omniverse",
+    "js",
+    "c",
+    "dll"
+  ],
+  "author": "Swampertor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/USwampertor/OmniverseJS/issues"
+  },
+  "homepage": "https://github.com/USwampertor/OmniverseJS#readme",
+  "dependencies": {
+    "ffi-napi": "^4.0.3",
+    "ref-napi": "^3.0.3",
+    "ref-struct-napi": "^1.1.1"
+  }
+}
