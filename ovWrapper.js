@@ -1,7 +1,13 @@
+/**
+ * Including needed files for wrapping C dll
+ */
 var ref = require('ref-napi');
 var ffi = require('ffi-napi');
 var struct = require('ref-struct-napi')
 
+/**
+ * This is a C to JS version of the Folder Entry of Omniverse
+ */
 exports.OmniFolderEntry = struct({
   "relativePath":   'string',
   "access":         'uint', 
@@ -16,8 +22,14 @@ exports.OmniFolderEntry = struct({
   "comment":        'string',
 });
 
+/**
+ * Pointer type to the Folder Entry
+ */
 exports.OmniFolderEntryPtr = ref.refType(exports.OmniFolderEntry)
 
+/**
+ * The OmniverseJS class contains the basic helper functions
+ */
 exports.OmniverseJS = class OmniverseJS {
 
   #omniLibrary;
